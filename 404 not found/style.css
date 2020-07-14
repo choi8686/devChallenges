@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Mono&display=swap");
+
+body {
+	font-family: "Inconsolata", monospace;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+	height: 100vh;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: 20px 1fr 20px;
+}
+
+.header {
+	padding: 25px 50px;
+}
+
+.header h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+
+.inside {
+	max-width: 1124px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 64px;
+	display: flex;
+	align-items: center;
+}
+
+.image {
+	width: 100%;
+	max-width: 539px;
+}
+
+.message {
+	width: 100%;
+	max-width: 534px;
+}
+
+.inside h2 {
+	font-size: 64px;
+	font-weight: bold;
+	color: #333;
+	letter-spacing: -0.035em;
+	line-height: 95px;
+}
+
+.inside p {
+	width: 100%;
+	max-width: 381px;
+	height: 172px;
+	font-size: 18px;
+	font-family: "Space Mono", monospace;
+	color: #4f4f4f;
+	line-height: 36px;
+	letter-spacing: -0.035em;
+}
+
+.inside .btn {
+	width: 216px;
+	padding: 1rem;
+	background-color: #333;
+	color: #fff;
+	border: 0;
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: -0.035em;
+}
+
+.footer {
+	padding: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 500px) {
+	.header {
+		padding: 10px 2.5rem;
+	}
+	.inside {
+		width: 100%;
+		flex-direction: column;
+		padding: 0 2.5rem;
+		box-sizing: border-box;
+	}
+	.message {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.message h2 {
+		font-size: 48px;
+		text-align: center;
+	}
+
+	.image {
+		text-align: center;
+	}
+
+	.image img {
+		max-width: 80%;
+	}
+
+	.inside .btn {
+		align-self: flex-start;
+	}
+}
